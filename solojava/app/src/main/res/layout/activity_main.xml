@@ -16,6 +16,13 @@
         android:layout_height="wrap_content"
         android:hint="Digite su nombre" />
 
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leche"
+        android:textAppearance="?android:textAppearanceMedium" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,6 +49,21 @@
         android:text="0"
         android:textSize="36sp" />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Que tan buena fue la orden"
+        android:textSize="26sp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="2" />
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,6 +80,19 @@
         android:id="@+id/terminarOrdenTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
+
+
+
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="2.5"
+        android:visibility="gone"
+        android:stepSize="0.5" />
 
 </LinearLayout>
